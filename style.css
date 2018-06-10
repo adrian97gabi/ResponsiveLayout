@@ -1,0 +1,161 @@
+* {
+	box-sizing: border-box;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+.hide {
+	display: none;
+}
+@media only screen and (min-width: 600px) {
+.hide {
+	display: inline-block;}
+}
+@media only screen and (min-width: 768px) {
+	.hide {display: inline-block;}
+}
+html {
+	margin:0;
+	padding:0;
+	width: 100%;
+}
+body {
+	margin:0;
+	padding:0;
+	width: 100%;
+}
+img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+}
+div.header {
+	height: 50px;
+	border-bottom: 1px solid gray;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	position: sticky;
+	overflow: hidden;
+}
+.header ul {
+	list-style-type: none;
+	margin-top: 10px;
+	padding: 0;
+}
+.header ul li {
+	padding: 2px;
+	text-align: center;
+	font-size: 25px;
+	display: inline-block;
+}
+.header ul li:hover {
+	background-color: lightgray;
+	color: white;
+}
+.header ul li a {
+	text-decoration: none;
+	font-family: monospace;
+	color: black;
+}
+.descriere {
+	text-align: center;
+
+	padding: 15px;
+	margin: 0;
+}
+.portret {
+	border:2px solid black;
+	padding: 0;
+	margin: 20px;
+	color: white;
+	background-color: black;
+}
+.portret:hover {
+	box-shadow: 4px 6px 8px rgba(0, 0, 0, .5);
+	background-color: white;
+	color: black;
+}
+.container {
+	margin: 20px;
+}
+input[type=text] {
+	width: 50%;
+	border:2px solid gray;
+	border-radius: 5px;
+	margin: 8px;
+	padding: 8px;
+	box-sizing: border-box;
+}
+input[type=text]:focus {
+	border-color: dodgerblue;
+	box-shadow: 0 0 8px 0 dodgerblue;
+}
+input[type=button] {
+	color: white;
+	background-color: black;
+	font-size: 20px;
+	font-family: monospace;
+	margin-left: 25%;
+	margin: 8px;
+	padding: 12px;
+	border:1px solid black;
+	box-shadow: 0 0 8px 0 black;
+}
+input[type=button]:click {
+	border-color: dodgerblue;
+	box-shadow: 0 0 8px 0 dodgerblue;
+}
+.button {
+	margin: 20px;
+	border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    color: white;
+    background-color: black;
+}
